@@ -1,0 +1,131 @@
+### CREATE five documents.
+POST http://localhost:3000/experiences HTTP/1.1
+content-type: application/json
+
+{
+    "experience": "Architecture and Assembly",
+    "type": "Project",
+    "language": "Intel 86x",
+    "proficiency": 5,
+    "date": "01-01-2024"
+}
+
+
+### CREATE 2
+POST http://localhost:3000/experiences HTTP/1.1
+content-type: application/json
+
+{
+    "experience": "Chess Variation",
+    "type": "Project",
+    "language": "Python",
+    "proficiency": 9,
+    "date": "07-01-2023"
+}
+
+### CREATE 3
+POST http://localhost:3000/experiences HTTP/1.1
+content-type: application/json
+
+{
+    "experience": "Target Specialty sales DBO",
+    "type": "Corporation",
+    "language": "English",
+    "proficiency": 10,
+    "date": "05-09-2022"
+}
+
+### CREATE 4
+POST http://localhost:3000/experiences HTTP/1.1
+content-type: application/json
+
+{
+    "experience": "3818 Devarg",
+    "type": "Internship",
+    "language": "Angular",
+    "proficiency": 3,
+    "date": "08-01-2019"
+}
+
+### CREATE 5
+POST http://localhost:3000/experiences HTTP/1.1
+content-type: application/json
+
+{
+    "experience": "Web Development",
+    "type": "Course",
+    "language": "JavaScript, Node, Express, MongoDB",
+    "proficiency": 7,
+    "date": "03-01-2024"
+}
+
+### CREATE 6
+POST http://localhost:3000/experiences HTTP/1.1
+content-type: application/json
+
+{
+    "experience": "Data Structure",
+    "type": "Course",
+    "language": "Python",
+    "proficiency": 5,
+    "date": "03-01-2024"
+}
+
+### CREATE 7 - Update
+POST http://localhost:3000/experiences HTTP/1.1
+content-type: application/json
+
+{
+    "experience": "Data Structure",
+    "type": "Course",
+    "language": "Python",
+    "proficiency": 5,
+    "date": "03-01-2024"
+}
+
+### CREATE 8 - Delete
+POST http://localhost:3000/experiences HTTP/1.1
+content-type: application/json
+
+{
+    "experience": "BLANK - Please Delete",
+    "type": "N/A",
+    "language": "N/A",
+    "proficiency": 0,
+    "date": "05-23-2002"
+}
+
+
+
+### RETRIEVE all documents.
+GET http://localhost:3000/experiences HTTP/1.1
+
+
+
+### RETRIEVE a document by its ID.
+### Replace the following ID with one that exists in the collection.
+GET http://localhost:3000/experiences/6654c5d7c70b757b35d06dc5 HTTP/1.1
+
+
+### UPDATE one document's year, by ID.
+### Replace the ID in the following request with one that exists
+### and update the year:
+POST http://localhost:3000/experiences HTTP/1.1
+content-type: application/json
+
+{
+    "experience": "Technical Writing",
+    "type": "Course",
+    "language": "English",
+    "proficiency": 10,
+    "date": "09-01-2023"
+}
+
+### DELETE by ID (responds with nothing if successful):
+DELETE http://localhost:3000/experiences/6654d30ec70b757b35d06dd0 HTTP/1.1
+
+
+
+### RETRIEVE all documents (responds with 4 or the original 5):
+GET http://localhost:3000/experiences HTTP/1.1
+

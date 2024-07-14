@@ -1,0 +1,4 @@
+skyblue: #61788C
+oceanBlue: #032326
+sunsetYellow: #F2AF5C
+sunsetOange: #F26835

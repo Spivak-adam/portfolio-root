@@ -1,0 +1,541 @@
+/*  ===== MOBILE styles (reside at the top and are inherited by all devices) ===== */
+/*  ===== See tablet, desktop, and print @media queries at the bottom. */
+
+
+/*   ----- Imports  -----  */
+/* @import 'node_modules/modern-normalize/modern-normalize.css';  npm install modern-normalize  Resets elements for browser consistency.  https://www.npmjs.com/package/modern-normalize */
+/* @import "component1.css";   Component-specific stylesheets, if any.   */
+/* @import url(//fonts.googleapis.com/css?family=Font+Name); Add fonts from a hosted services like Google Fonts.   */
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Lugrasimo&family=Sanchez:ital@0;1&display=swap');
+@import "~react-image-gallery/styles/css/image-gallery.css";
+
+/*   ----- Variables  -----  */
+:root {
+    --skyBlue: #61788C;
+    --oceanBlue: #032326;
+    --sunsetYellow: hsla(33, 85%, 65%, .7);
+    --sunsetOrange: rgba(242, 104, 53, .5);
+    /*
+        --sunsetYellow: #F2AF5C;
+        --skyBlue: hsla(208, 18%, 46%, .5);
+    */
+}
+
+/*  ----- Viewport ----- elements inherited by all remaining elements ----- */
+body { /* Can alternatively define in html {}. */
+    background-image: url(../public/background.png);
+    background-repeat: no-repeat;
+    background-position: top left;
+    background-attachment: fixed;
+    background-size: cover;
+    color: var(--oceanBlue);
+    font-family: "Sanchez", serif; /* Define with at least one font name and its related generic family name.*/
+    margin: 0 auto;
+    padding: 0;
+    max-width: 90%;
+}
+
+/*  ----- Page layout blocks -----  */
+header {
+    background-color: var(--sunsetYellow);
+    text-align: center;
+}
+
+main {
+    background-color: var(--sunsetYellow);
+    padding-top: 3%;
+    padding-bottom: 2%;
+}
+
+section {
+    background-color: var(--sunsetOrange);
+    padding: 3%;
+    margin: 0px auto;
+    max-width: 85%;
+}
+
+section h2{
+    margin-top: 2px;
+}
+
+article {
+}
+
+#topic1 {
+}
+
+#topic2 {
+}
+
+div {
+}
+
+aside {
+    float: right;
+    margin: 20px;
+    padding: 20px;
+    border: 2px var(--oceanBlue) dashed;
+}
+
+footer {
+    background-color: var(--sunsetYellow);
+}
+
+footer p {
+    margin: 0px;
+    padding: 10px
+    
+}
+
+/* ----- Anchors ----- Text links */
+a {
+}
+
+    a:link {
+        color: var(--oceanBlue);
+    }
+
+    a:hover {
+        color: var(--sunsetYellow);
+    }
+
+    a:active {
+    }
+
+    a:visited {
+        color: skyblue;
+    }
+
+/*  ----- Navigation ----- Override text links for navigation only.  */
+nav {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-flow: row wrap;
+    padding-bottom: 10px;
+    border-bottom: 2px solid var(--oceanBlue);
+}
+
+    nav.local {
+        border-bottom: 2px solid var(--oceanBlue);
+        display: flex;
+        justify-content: center;
+    }
+
+    nav.local a{
+        margin: 5px;
+    }
+
+    nav a {
+        text-align: center;
+        background-color: skyblue;
+        border: 2px solid var(--oceanBlue);
+        border-radius: 5px;
+        color: var(--oceanBlue);
+        font-size: 1.1em;
+        font-weight: bold;
+        margin: 3px;
+        padding: 3px 20px 3px 20px;
+        text-decoration: none;
+    }
+
+        nav a:hover {
+            background-color: white;
+            color: var(--oceanBlue);
+        }
+
+        nav a:visited{
+            color: var(--oceanBlue);
+        }
+
+/*  -----  Typography  ----- */
+p {
+}
+
+br {
+}
+
+ol, ul, dl {
+}
+
+li {
+}
+
+dt {
+}
+
+dd {
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: "Lugrasimo", cursive;
+}
+
+h1 {
+}
+
+h2 {
+}
+
+h3 {
+}
+
+h4 {
+}
+
+h5 {
+}
+
+h6 {
+}
+
+abbr {
+}
+
+acronym {
+}
+
+address {
+}
+
+blockquote {
+}
+
+q {
+}
+
+cite {
+}
+
+em {
+}
+
+hr {
+}
+
+mark {
+}
+
+s {
+}
+
+span {
+}
+
+strong {
+}
+
+sub {
+}
+
+sup {
+}
+
+time {
+}
+
+/*  ----- Coding or instructional typography ----- */
+pre {
+}
+
+code {
+}
+
+kbd {
+}
+
+samp {
+}
+
+var {
+}
+
+del {
+}
+
+ins {
+}
+
+/*  ----- Table ----- */
+table {
+    border-collapse:collapse;
+    color: var(--oceanBlue);
+    margin: 0 auto;
+    font-size: 1.1em;
+}
+
+caption {
+    border-bottom: 2px;
+    font-size: 1.2em;
+}
+
+thead {
+}
+
+tbody {
+}
+
+tfoot {
+}
+
+tr {
+    text-align: left;
+}
+
+    tr:nth-child(even) {
+    }
+
+th {
+    border-bottom: 2px solid var(--oceanBlue);
+}
+
+td {
+    padding: 10px 10px 10px 0px;
+    border-bottom: 2px dashed var(--oceanBlue);
+}
+
+colgroup {
+}
+
+data {
+}
+
+datalist {
+}
+
+#staffTable{
+    margin: 0 auto;
+    background-color: var(--sunsetYellow);
+}
+
+#staffTable img{
+    width: 80px;
+    margin: 5px;
+    padding: 5px;
+    border: 2px var(--skyBlue) solid;
+}
+
+#staffTable th{
+    margin: 0 auto;
+}
+
+    #staffTable th:nth-child(3) {
+        text-align: center;
+    }
+
+    #staffTable th:nth-child(4) {
+        text-align: center;
+    }
+
+#staffTable td{
+    margin: 0 auto;
+}
+
+    #staffTable td:nth-child(3) {
+        text-align: center;
+    }
+
+    #staffTable td:nth-child(4) {
+        text-align: right;
+    }
+
+#experiences{
+    width: 100%;
+}
+
+/*  ----- Form ----- */
+form {
+    color:var(--oceanBlue);
+    display: flex;
+    flex-flow: wrap;
+    justify-content: center;
+    background-color: var(--sunsetOrange);
+    padding-bottom: 10px;
+}
+
+fieldset {
+    font-size: 1.3em;
+    border: 2px solid var(--oceanBlue);
+    background-color: var(--sunsetYellow);
+    max-width: 80%;
+}
+
+legend {
+    font-weight: bold;
+}
+
+label {
+    display: block;
+}
+
+button {
+    font-size: 1.1em;
+    font: inherit;
+}
+
+input {
+    font-size: 0.9em;
+}
+
+select {
+    font-size: 1.1em;
+}
+
+optgroup {
+}
+
+option {
+}
+
+textarea {
+    font-size: 1.1em;
+    width: 95%;
+    height: 150px;
+}
+
+output {
+}
+
+meter {
+}
+
+progress {
+}
+
+
+/* ----- Media ----- */
+figure {
+    
+}
+
+figcaption {
+}
+
+figure img {
+}
+
+svg {
+}
+
+picture {
+}
+
+source {
+}
+
+iframe {
+}
+
+video {
+}
+
+audio {
+}
+
+embed {
+}
+
+object {
+}
+
+/*  ----- Classes for alignment, positioning, widths, grids, embellishments, and animation -----  */
+.gallery{
+    display: flex;
+    flex-flow: wrap
+}
+
+.gallery figure {
+    display: flex;
+    flex-flow:column;
+    border: 2px solid var(--oceanBlue);
+    max-width: 80%;
+    padding: 10px;
+    align-items: center;
+}
+
+.gallery img {
+    width: 50%;
+}
+
+.gallery figcaption{
+    font-size: 1.1em;
+    font-weight: bold;
+    color: var(--oceanBlue)
+}
+
+.floatright {
+}
+
+.floatleft {
+}
+
+.center-middle {
+}
+
+.ten {
+}
+
+.twenty {
+}
+
+.thirty {
+}
+
+.forty {
+}
+
+.fifty {
+}
+
+.sixty {
+}
+
+.seventy {
+}
+
+.eighty {
+}
+
+.radius {
+}
+
+.circle {
+}
+
+.boxshadow {
+}
+
+.tshadow {
+}
+
+.gradient {
+}
+
+.shape {
+}
+
+.self-portrait{
+    width: 20%;
+    float: right;
+    margin: 10px
+}
+
+.logoSize{
+    width: 5%;
+    padding-top: 10px;
+}
+
+@keyframes App-logo {
+}
+
+/*   ===== TABLET  media query overrides mobile styles ===== */
+@media all and (min-width: 600px) {
+}
+
+/*   ===== DESKTOP  media query overrides mobile and tablet styles ===== */
+@media all and (min-width: 1080px) {
+}
+
+/*   ===== PRINT  media query overrides previous styles =====  */
+@media print {
+}
