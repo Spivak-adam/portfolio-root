@@ -4,7 +4,7 @@ import 'dotenv/config';
 import express from 'express';
 import * as experiences from './experiences-model.mjs';
 
-const PORT = process.env.PORT;
+const PORT = process.env.PORT || 5000;
 const app = express();
 app.use(express.json());  // REST needs JSON MIME type.
 
