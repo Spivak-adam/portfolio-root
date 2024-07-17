@@ -3,7 +3,6 @@
   "version": "2023",
   "description": "",
   "main": "experiences-controller.mjs",
-  "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "nodemon experiences-controller.mjs"

@@ -1,5 +1,5 @@
 {
-  "name": "Portfolio-starter-frontend",
+  "name": "movies-starter-frontend",
   "version": "2023",
   "private": true,
   "proxy": "http://localhost:3000",
