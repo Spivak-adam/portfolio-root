@@ -1,4 +1,4 @@
-A Portfolio Web application utilizing the Mern (Mongoose, Express, React, Node). I am currently working to get the application online, but to use for now one must download repository and install the node modules.
+A Portfolio Web application utilizing the Mern (Mongoose, Express, React, Node). I am currently working to get the application online, but to use it for now one must download the repository and install the node modules.
 To install dependencies:
 ./portfolio-root npm install
 ./portfolio-root/client npm install
