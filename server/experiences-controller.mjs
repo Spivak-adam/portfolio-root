@@ -3,6 +3,10 @@
 import 'dotenv/config';
 import express from 'express';
 import * as experiences from './experiences-model.mjs';
+import { fileURLToPath } from 'url';
+import path from 'path';
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
 
 const PORT = process.env.PORT;
 const app = express();
@@ -104,7 +108,12 @@ app.delete('/experiences/:_id', (req, res) => {
         });
 });
 
+app.use(express.static(path.join(__dirname, '../client/build')));
 
-app.listen(PORT, () => {
+app.get('*', (req, res) => {
+    res.sendFile(path.join(__dirname, '../client/build/index.html'));
+  });
+
+app.listen(PORT, '0.0.0.0', () => {
     console.log(`Server listening on port ${PORT}...`);
 });

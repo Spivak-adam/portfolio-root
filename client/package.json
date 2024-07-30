@@ -2,6 +2,7 @@
   "name": "movies-starter-frontend",
   "version": "2023",
   "private": true,
+  "main":"experiences-controller.mjs",
   "proxy": "http://localhost:3000",
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.5",
