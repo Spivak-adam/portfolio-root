@@ -6,7 +6,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node experiences-controller.mjs",
-    "dev": "nodemon experiences-controller.mjs"
+    "dev": "nodemon experiences-controller.mjs",
+    "postinstall": "cd ../client && npm install && npm run build"
   },
   "author": "",
   "license": "ISC",
