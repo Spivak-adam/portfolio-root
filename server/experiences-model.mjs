@@ -6,7 +6,7 @@ import 'dotenv/config';
 
 // Connect based on the .env file parameters.
 mongoose.connect(
-    process.env.MONGO_URI,
+    process.env.MONGODB_CONNECT_STRING,
     { useNewUrlParser: true }
 );
 const db = mongoose.connection;
